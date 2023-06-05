@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(
+    const MaterialApp(
+      title: 'Layout Example',
+      home: Scaffold(
+        body: SafeArea(
+          child: OneColumns(),
+        ),
+      ),
+    ),
+  );
+}
+
 class OneColumns extends StatelessWidget {
   const OneColumns({Key? key}) : super(key: key);
 
